@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>未来的架构师</title>
+  <icon>http://yoursite.com/icon.png</icon>
+  <subtitle>复盘反思是进步的捷径</subtitle>
+  <link href="/lpf.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-10-23T14:06:20.858Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Lvpengfei</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mongo备份数据</title>
+    <link href="http://yoursite.com/2019/10/23/mongo%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE/"/>
+    <id>http://yoursite.com/2019/10/23/mongo%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE/</id>
+    <published>2019-10-23T14:05:44.000Z</published>
+    <updated>2019-10-23T14:06:20.858Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;code&gt;crontab -l&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>mysql备份数据</title>
+    <link href="http://yoursite.com/2019/10/23/mysql%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE/"/>
+    <id>http://yoursite.com/2019/10/23/mysql%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE/</id>
+    <published>2019-10-23T14:04:40.000Z</published>
+    <updated>2019-10-23T14:06:18.312Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;mysql数据库备份&quot;&gt;&lt;a href=&quot;#mysql数据库备份&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2019/10/23/hello-world/"/>
+    <id>http://yoursite.com/2019/10/23/hello-world/</id>
+    <published>2019-10-23T13:58:25.970Z</published>
+    <updated>2019-10-23T13:58:25.970Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>干法</title>
+    <link href="http://yoursite.com/2019/10/16/%E5%B9%B2%E6%B3%95/"/>
+    <id>http://yoursite.com/2019/10/16/%E5%B9%B2%E6%B3%95/</id>
+    <published>2019-10-15T16:08:13.000Z</published>
+    <updated>2019-10-15T16:08:28.205Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;16进步最快的方法，就是复盘。&lt;/p&gt;
+&lt;p&gt;这个世界上的事情往往很奇妙，你说复杂，他也很简单，简单到人、物、事，复杂到这个世界的种种。&lt;/p&gt;
+&lt;p&gt;生活不易，却殊途同归。&lt;/p&gt;
+&lt;p&gt;在看稻盛和夫的《干法》，有感而发，故而记录。以防止过去常常遇到的读书过程中有什么想法
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>golang基础类型</title>
+    <link href="http://yoursite.com/2019/10/15/golang%E5%9F%BA%E7%A1%80%E7%B1%BB%E5%9E%8B/"/>
+    <id>http://yoursite.com/2019/10/15/golang%E5%9F%BA%E7%A1%80%E7%B1%BB%E5%9E%8B/</id>
+    <published>2019-10-15T03:29:29.000Z</published>
+    <updated>2019-10-15T03:31:50.192Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;golang基础数据类型&quot;&gt;&lt;a href=&quot;#golang基础数据类型&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="golang" scheme="http://yoursite.com/tags/golang/"/>
+    
+  </entry>
+  
+</feed>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>mongo备份数据</title>
+      <link href="/lpf.github.io/2019/10/23/mongo%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE/"/>
+      <url>/lpf.github.io/2019/10/23/mongo%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE/</url>
+      
+        <content type="html"><![CDATA[<p><code>crontab -l</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">返回：</span><br><span class="line"></span><br><span class="line">1 */4 * * * /data/backdb/back_up.sh &gt;/dev/null &gt;&amp;2</span><br></pre></td></tr></table></figure><p><code>cat /data/backdb/back_up.sh</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">## declare an array variable</span><br><span class="line">declare -a db_arr=(</span><br><span class="line">&quot;securitybug&quot;</span><br><span class="line">&quot;securitybugv2&quot;</span><br><span class="line">&quot;umanager&quot;</span><br><span class="line">)</span><br><span class="line">db_bk=/data/backdb/backup</span><br><span class="line"></span><br><span class="line">## now loop through the above array</span><br><span class="line">for i in &quot;$&#123;db_arr[@]&#125;&quot;</span><br><span class="line">do</span><br><span class="line">   echo &quot;start to dump &quot; $i</span><br><span class="line">   mongodump -h 172.28.196.75:20000 -d $i -o $db_bk</span><br><span class="line">   echo &quot;end&quot;</span><br><span class="line">   # or do whatever with individual element of the array</span><br><span class="line">done</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">chmod +x ./backup.sh</span><br><span class="line">crontab -l</span><br><span class="line">crontab -e</span><br><span class="line"></span><br><span class="line">40 22 * * * /data/lpf/test/backup.sh  //每天22点40执行脚本</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>mysql备份数据</title>
+      <link href="/lpf.github.io/2019/10/23/mysql%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE/"/>
+      <url>/lpf.github.io/2019/10/23/mysql%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE/</url>
+      
+        <content type="html"><![CDATA[<h2 id="mysql数据库备份"><a href="#mysql数据库备份" class="headerlink" title="mysql数据库备份"></a>mysql数据库备份</h2><p><strong>backup.sh</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/sh</span><br><span class="line">db_arr=(</span><br><span class="line">    &quot;web&quot;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">for i in &quot;$&#123;db_arr[@]&#125;&quot;</span><br><span class="line">do</span><br><span class="line">    echo &quot;start to dump&quot; $i</span><br><span class="line">    docker exec -it docker-mysql[docker_container_id/docker_name] mysqldump -h 120.132.26.176 -uroot -p[password] --databases web &gt; /data/backdb/`date &quot;+%Y%m%d&quot;`web.sql</span><br><span class="line">    echo &quot;end to dump $&#123;db_arr[$i]&#125;&quot;</span><br><span class="line">done</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">chmod +x ./backup.sh</span><br><span class="line">crontab -l</span><br><span class="line">crontab -e</span><br><span class="line"></span><br><span class="line">40 22 * * * /data/lpf/test/backup.sh  //每天22点40执行脚本</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/lpf.github.io/2019/10/23/hello-world/"/>
+      <url>/lpf.github.io/2019/10/23/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="网站定位，解决问题的能力，各种场景的解决办法"><a href="#网站定位，解决问题的能力，各种场景的解决办法" class="headerlink" title="网站定位，解决问题的能力，各种场景的解决办法"></a>网站定位，解决问题的能力，各种场景的解决办法</h3><p>从系统开发的过程中，遇到的各种常见问题的解决方法。</p><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>干法</title>
+      <link href="/lpf.github.io/2019/10/16/%E5%B9%B2%E6%B3%95/"/>
+      <url>/lpf.github.io/2019/10/16/%E5%B9%B2%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<p>16进步最快的方法，就是复盘。</p><p>这个世界上的事情往往很奇妙，你说复杂，他也很简单，简单到人、物、事，复杂到这个世界的种种。</p><p>生活不易，却殊途同归。</p><p>在看稻盛和夫的《干法》，有感而发，故而记录。以防止过去常常遇到的读书过程中有什么想法，却在书读完那一刻，做到了张无忌学习太极剑的境界。</p><p>说来惭愧，之前不知道稻盛和夫这个人，仅仅对日本 松下电器有所耳闻，读这本书的契机是：公司组织学习读书会。听了樊登对于这本书的讲解。让我对这本书有了初步的认识。也许听上去可能是我被打了鸡血，但我深深的认识到，不是这样的。</p><p>在看这本书之前，我看过《小狗钱钱》，《王阳明》。为什么说这两本书呢？小狗钱钱中那个小女孩，最开始通过遛狗赚钱，到后来认识到小狗主人，在小狗主人和他表哥的帮助下，慢慢的建立自己的赚钱之路。王阳明是明代的大思想家，军事家，创建了心学，带过军队平乱。提出的知行合一思想，是我很佩服的哲学，可以说王阳明是一个理论+实践家。</p><p>而这本书仅仅在序言部分，我读到了作者发扬稻盛和精神的极致。从2001年10月份，译本作者见到稻盛和夫的那一刻，同年12月份到他的公司拜访，接着一发不可收拾，订购他的杂志，读稻盛和夫，写稻盛和夫，译稻盛和夫的n本书，就这样一步一步的和他合作，走上自己的道路。热爱，是成功必备的前提，就像稻盛和夫一样，转变态度，热爱、深入自己的所做的事情，你会发现他的神奇，everything!!!</p><p>读这本书，有几点感觉很深刻：</p><p>一、改变工作的心态，疯狂的迷恋上工作。（关键你要去想）</p><p>稻盛和夫从刚开始厌恶工作，到爱上工作，也是强迫自己，到突然发现所从事职业的魅力，“极度认真，上天会眷顾你”。疯狂的爱上工作。</p><p>其实当前这个社会，要做到真的是太不容易了，种种诱惑，各种麻烦事，让你应接不暇。</p><p>但反过来说，各种条件便利，很多东西只要你着手去找，就会发现，其实并没有那么难，难得是你要有那份断舍离的思想，除了工作放弃其他的东西，不疯魔不成魔。</p><p>二、定高目标，每天想象成功的情景，付出不亚于任何人的努力 （关键你要去想）</p><p>就像《小狗钱钱》中，小狗教育小女孩，你要将自己的愿望写下来，然后收集明信片，贴在储钱罐上面，天天看，想象梦想达成的样子。看着目标，这样会提醒你时刻谨记自己的目标，排除干扰，让你不断为之努力。</p><p>这可能也是洗脑的可怕之处吧。当然武器没有好坏，只有人心有好坏，所有我们要把这种方法用在完成自己的事业上。当你实在不行的时候，梳理过去，重新开始，这就是你真正的开始。（无论无何也要让自己事业成功）</p><p>三、追求完美，“创造性”的工作。</p><p>这一点很重要，但其实我们都不容易做到，我曾经常常反思为什么。却无从下手，因为当前的技能已经足够你使用了。</p><p>就像你有一把扫帚，用习惯了，也不会想着去改变，何况很多时候你根本不知道已经有吸尘机、自动扫地机器人等。前一年给父母买了一个全自动洗衣机，但他们却放在一边，问起来是习惯了老式洗衣机。</p><p>总结以上的发现，你就会知道为什么，满足是创新的最大敌人。</p><p>那么怎么改变？不满足，持续不断的改造自己的工作，不断优化，自然就会去关注，去改进自己。思考为什么，这样做是为什么，是否可行。</p><p>四、每次只执行一个计划，如果不成功就不进行下一个</p><p>曾经我制订了很多的计划，但完成的寥寥无几，回顾一年很多时候发现自己能拿出手的作品几乎为零，看过了这边书，我将自己的计划变成了一个，进行下一个计划的前提是完成当前的工作。</p><p>五、做个好人（思维 * 热情 * 能力）动机至善、私信了无。</p><p>– 读《干法》</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>golang基础类型</title>
+      <link href="/lpf.github.io/2019/10/15/golang%E5%9F%BA%E7%A1%80%E7%B1%BB%E5%9E%8B/"/>
+      <url>/lpf.github.io/2019/10/15/golang%E5%9F%BA%E7%A1%80%E7%B1%BB%E5%9E%8B/</url>
+      
+        <content type="html"><![CDATA[<h2 id="golang基础数据类型"><a href="#golang基础数据类型" class="headerlink" title="golang基础数据类型"></a>golang基础数据类型</h2><blockquote><p>整形，字符串，布尔类型，浮点型，数组，结构体</p></blockquote><h2 id="golang基础类型的初始化"><a href="#golang基础类型的初始化" class="headerlink" title="golang基础类型的初始化"></a>golang基础类型的初始化</h2><h4 id="整形"><a href="#整形" class="headerlink" title="整形"></a>整形</h4><h4 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h4><h4 id="布尔类型"><a href="#布尔类型" class="headerlink" title="布尔类型"></a>布尔类型</h4>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> golang </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
