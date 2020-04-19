@@ -6,7 +6,7 @@
   <link href="/lpf.github.io/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-19T09:46:59.257Z</updated>
+  <updated>2020-04-19T10:06:10.965Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>hexo搭建个人博客.md</title>
+    <title>nginx安装</title>
+    <link href="http://yoursite.com/2020/04/19/nginx%E5%AE%89%E8%A3%85/"/>
+    <id>http://yoursite.com/2020/04/19/nginx%E5%AE%89%E8%A3%85/</id>
+    <published>2020-04-19T10:06:10.000Z</published>
+    <updated>2020-04-19T10:06:10.965Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;nginx-的安装&quot;&gt;&lt;a href=&quot;#nginx-的安装&quot; class=&quot;headerlink&quot; title=&quot;nginx  的安装&quot;&gt;&lt;/a&gt;nginx  的安装&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;nginx
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="nginx" scheme="http://yoursite.com/tags/nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo搭建个人博客</title>
     <link href="http://yoursite.com/2020/04/19/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2020/04/19/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
     <published>2020-04-19T04:11:34.000Z</published>
-    <updated>2020-04-19T09:46:59.257Z</updated>
+    <updated>2020-04-19T09:59:52.832Z</updated>
     
     <summary type="html">
     
