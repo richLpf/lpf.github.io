@@ -6,7 +6,7 @@
   <link href="/lpf.github.io/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-19T10:17:01.536Z</updated>
+  <updated>2020-04-19T12:01:24.311Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2020/04/19/nginx%E5%AE%89%E8%A3%85/"/>
     <id>http://yoursite.com/2020/04/19/nginx%E5%AE%89%E8%A3%85/</id>
     <published>2020-04-19T10:06:10.000Z</published>
-    <updated>2020-04-19T10:17:01.536Z</updated>
+    <updated>2020-04-19T12:01:24.311Z</updated>
     
     <summary type="html">
     
@@ -29,8 +29,8 @@
       
         
         
-          &lt;h1 id=&quot;nginx-的安装&quot;&gt;&lt;a href=&quot;#nginx-的安装&quot; class=&quot;headerlink&quot; title=&quot;nginx  的安装&quot;&gt;&lt;/a&gt;nginx  的安装&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;nginx
+          &lt;p&gt;nginx 是一款高并发的轻量级web代理服务器，它可以运行在Linux,Windows,Mac OS等操作系统上。&lt;/p&gt;
+&lt;h2 id=&quot;一、安装在linux&quot;&gt;&lt;a href=&quot;#一、安装在linux&quot; class=&quot;headerlink&quot;
         
       
     
