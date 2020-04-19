@@ -6,7 +6,7 @@
   <link href="/lpf.github.io/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-19T04:16:50.262Z</updated>
+  <updated>2020-04-19T04:20:04.522Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2020/04/19/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-md/"/>
     <id>http://yoursite.com/2020/04/19/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-md/</id>
     <published>2020-04-19T04:11:34.000Z</published>
-    <updated>2020-04-19T04:16:50.262Z</updated>
+    <updated>2020-04-19T04:20:04.522Z</updated>
     
     <summary type="html">
     
@@ -29,8 +29,8 @@
       
         
         
-          &lt;h2 id=&quot;一、初始化项目&quot;&gt;&lt;a href=&quot;#一、初始化项目&quot; class=&quot;headerlink&quot; title=&quot;一、初始化项目&quot;&gt;&lt;/a&gt;一、初始化项目&lt;/h2&gt;&lt;p&gt;安装node&lt;/p&gt;
-&lt;figure class=&quot;highlight
+          &lt;p&gt;从零开始搭建hexo,这是入门篇，主要介绍下hexo的初始化项目，之后慢慢记录hexo的进阶。&lt;/p&gt;
+&lt;h2 id=&quot;一、初始化项目&quot;&gt;&lt;a href=&quot;#一、初始化项目&quot; class=&quot;headerlink&quot;
         
       
     
