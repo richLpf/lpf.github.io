@@ -6,7 +6,7 @@
   <link href="/lpf.github.io/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-19T05:10:27.337Z</updated>
+  <updated>2020-04-19T09:44:34.953Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo搭建个人博客.md</title>
+    <link href="http://yoursite.com/2020/04/19/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2020/04/19/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+    <published>2020-04-19T04:11:34.000Z</published>
+    <updated>2020-04-19T09:44:34.953Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;从零开始搭建hexo,这是入门篇，主要介绍下hexo的初始化项目，之后慢慢记录hexo的进阶。&lt;/p&gt;
+&lt;h2 id=&quot;一、初始化项目&quot;&gt;&lt;a href=&quot;#一、初始化项目&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>mongo备份数据</title>
@@ -39,6 +65,32 @@
     
     
       <category term="mongo" scheme="http://yoursite.com/tags/mongo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mysql备份数据</title>
+    <link href="http://yoursite.com/2019/10/23/mysql%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE/"/>
+    <id>http://yoursite.com/2019/10/23/mysql%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE/</id>
+    <published>2019-10-23T14:04:40.000Z</published>
+    <updated>2020-04-19T09:42:49.696Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;mysql数据库的备份是必须要做的，这里记录下自己备份数据的脚本&lt;/p&gt;
+&lt;h2 id=&quot;mysql数据库备份&quot;&gt;&lt;a href=&quot;#mysql数据库备份&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="mysql" scheme="http://yoursite.com/tags/mysql/"/>
     
   </entry>
   
