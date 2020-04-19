@@ -3,7 +3,7 @@
   <title>未来的架构师</title>
   <icon>http://yoursite.com/icon.png</icon>
   <subtitle>复盘反思是进步的捷径</subtitle>
-  <link href="/atom.xml" rel="self"/>
+  <link href="/public/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
   <updated>2020-04-19T10:17:01.536Z</updated>
