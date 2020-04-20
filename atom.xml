@@ -6,7 +6,7 @@
   <link href="/lpf.github.io/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-19T12:01:24.311Z</updated>
+  <updated>2020-04-20T16:14:41.563Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>nginx源码编译</title>
+    <link href="http://yoursite.com/2020/04/21/nginx%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91/"/>
+    <id>http://yoursite.com/2020/04/21/nginx%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91/</id>
+    <published>2020-04-20T16:14:06.000Z</published>
+    <updated>2020-04-20T16:14:41.563Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;nginx源码编译，通常会出现很多小问题，所以对nginx要求不高，配置比较简单，可以选择工具安装.&lt;/p&gt;
+&lt;p&gt;这里由centos为例用源码进行安装&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;服务器选择ucloud，购买请&lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>nginx安装</title>
     <link href="http://yoursite.com/2020/04/19/nginx%E5%AE%89%E8%A3%85/"/>
     <id>http://yoursite.com/2020/04/19/nginx%E5%AE%89%E8%A3%85/</id>
     <published>2020-04-19T10:06:10.000Z</published>
-    <updated>2020-04-19T12:01:24.311Z</updated>
+    <updated>2020-04-20T16:12:39.091Z</updated>
     
     <summary type="html">
     
