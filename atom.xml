@@ -6,7 +6,7 @@
   <link href="/lpf.github.io/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-20T16:14:41.563Z</updated>
+  <updated>2020-04-21T04:31:18.593Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>通过docker使用nginx</title>
+    <link href="http://yoursite.com/2020/04/21/%E9%80%9A%E8%BF%87docker%E4%BD%BF%E7%94%A8nginx/"/>
+    <id>http://yoursite.com/2020/04/21/%E9%80%9A%E8%BF%87docker%E4%BD%BF%E7%94%A8nginx/</id>
+    <published>2020-04-21T04:30:08.000Z</published>
+    <updated>2020-04-21T04:31:18.593Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;工作中，我们常常使用docker部署服务，这样的话，如果将nginx打包成镜像，改动起来不太方便，日志查询也很麻烦，所以我们可以将nginx和日志挂载在容器外。&lt;/p&gt;
+&lt;p&gt;服务器选择ucloud，购买请&lt;a href=&quot;https://ucloud.cn&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="nginx" scheme="http://yoursite.com/tags/nginx/"/>
+    
+      <category term="docker" scheme="http://yoursite.com/tags/docker/"/>
+    
+  </entry>
+  
+  <entry>
     <title>nginx源码编译</title>
     <link href="http://yoursite.com/2020/04/21/nginx%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91/"/>
     <id>http://yoursite.com/2020/04/21/nginx%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91/</id>
     <published>2020-04-20T16:14:06.000Z</published>
-    <updated>2020-04-20T16:14:41.563Z</updated>
+    <updated>2020-04-21T04:30:54.109Z</updated>
     
     <summary type="html">
     
@@ -39,6 +67,8 @@
     </summary>
     
     
+    
+      <category term="nginx" scheme="http://yoursite.com/tags/nginx/"/>
     
   </entry>
   
