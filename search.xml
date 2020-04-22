@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>nginx命令行</title>
+      <link href="/lpf.github.io/2020/04/22/nginx%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+      <url>/lpf.github.io/2020/04/22/nginx%E5%91%BD%E4%BB%A4%E8%A1%8C/</url>
+      
+        <content type="html"><![CDATA[<p>nginx 主要通过发射信号来控制进程，了解这些命令可以帮助我们更好的使用nginx</p><p>下面是nginx的命令思维导图</p><p><img src="http://weblpf.cn-bj.ufileos.com/ufile-log%2Fweblpf%2Fnginx%E5%91%BD%E4%BB%A4%E8%A1%8C.png" alt="nginx命令行"></p><h2 id="一、nginx命令行"><a href="#一、nginx命令行" class="headerlink" title="一、nginx命令行"></a>一、nginx命令行</h2><p>nginx 使用信号控制进程，通过nginx命令我们可以实现各种操作</p><p><code>nginx -s  stop</code>  直接停止nginx</p><p><code>nginx -s quit</code> 优雅停止nginx(nginx会在所有请求执行完毕，依次关闭进程，最后退出)</p><p><code>nginx -s reload</code> 重新载入配置，平滑重启nginx, 新的请求会走新的配置，老的请求处理完毕后关闭nginx进程。</p><p><code>nginx -s reopen</code> 重新打开日志文件  适用于切割nginx日志操作</p><p><code>nginx -t</code>  检查配置文件语法是否正确，-T  同时打印出配置文件，后面跟文件路径，可以检查某个文件</p><p><code>nginx -h</code>  显示nginx的可以执行的命令</p><p><code>nginx -v</code>  查看nginx版本  -V 通知显示nginx的安装信息和安装的模块。</p><p><code>nginx -c</code>  &lt;配置文件目录&gt;  来启动非默认的配置</p><p><code>nginx -p</code>  &lt;目录&gt;  来指定nginx的安装目录 </p><p><code>nginx -g</code>  来临时指定一些全局配置项</p><p><code>nginx -g</code>  “pid /var/nginx/test.pid;”   意味着把pid写到另一个文件中，-g指定的不能与默认冲突，另外以-g启动的ngix在停止事也需要加上-g</p><p><code>nginx -g</code>  “pid /var/nginx/test.pid;” -s stop.  如果不加-g 就找不到pid文件了</p><h2 id="二、其他命令使用"><a href="#二、其他命令使用" class="headerlink" title="二、其他命令使用"></a>二、其他命令使用</h2><p>1、使用系统命令来启动nginx</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">systemctl start nginx  或  service nginx start </span><br><span class="line"></span><br><span class="line">systemctl status nginx 或  service nginx status</span><br><span class="line"></span><br><span class="line">systemctl stop nginx 或 service nginx stop</span><br></pre></td></tr></table></figure><p>2、使用kill 启动nginx</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">kill</span> -HUP  pid  pid是进程标识，使用该命令发起一个挂起信号，服务器进程会进行复位操作，重新加载配置文件。</span><br></pre></td></tr></table></figure><ul><li>TERM, INT  快递关闭</li><li>QUIT   从容关闭</li><li>HUP   平滑重启，重新加载配置文件</li><li>USER1  重新打开日志文件</li><li>USER2  平滑升级可执行程序</li><li>WINCH  从容关闭工作进程</li></ul><h2 id="三、二者区别"><a href="#三、二者区别" class="headerlink" title="三、二者区别"></a>三、二者区别</h2><p>1、systemctl 或 service 启动nginx, 会关掉nginx并重新启动nginx进程id</p><p>2、<code>nginx -s reload</code> 或 <code>kill -HUP pid</code>  必须在nginx 启动后使用</p><p>3、<code>nginx -s reload</code>  和 <code>kill -HUP pid</code> 会保留旧的请求，直到连接全部结束后退出，新的请求通过新的配置启动进程。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> nginx </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>通过docker使用nginx</title>
       <link href="/lpf.github.io/2020/04/21/%E9%80%9A%E8%BF%87docker%E4%BD%BF%E7%94%A8nginx/"/>
       <url>/lpf.github.io/2020/04/21/%E9%80%9A%E8%BF%87docker%E4%BD%BF%E7%94%A8nginx/</url>
