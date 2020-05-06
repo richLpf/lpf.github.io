@@ -6,7 +6,7 @@
   <link href="/lpf.github.io/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-05T16:00:08.373Z</updated>
+  <updated>2020-05-06T14:18:24.594Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>golang使用gin框架搭建工作项目</title>
+    <title>golang使用gin搭建项目（2）</title>
+    <link href="http://yoursite.com/2020/05/06/golang%E4%BD%BF%E7%94%A8gin%E6%90%AD%E5%BB%BA%E9%A1%B9%E7%9B%AE%EF%BC%882%EF%BC%89/"/>
+    <id>http://yoursite.com/2020/05/06/golang%E4%BD%BF%E7%94%A8gin%E6%90%AD%E5%BB%BA%E9%A1%B9%E7%9B%AE%EF%BC%882%EF%BC%89/</id>
+    <published>2020-05-06T14:10:48.000Z</published>
+    <updated>2020-05-06T14:18:24.594Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;这一节，我们继续对项目进行改造，引入数据库，配置，文档等。&lt;/p&gt;
+&lt;h2 id=&quot;一、引入数据库交互&quot;&gt;&lt;a href=&quot;#一、引入数据库交互&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="mysql ini swagger golang gin" scheme="http://yoursite.com/tags/mysql-ini-swagger-golang-gin/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>golang使用gin框架搭建工作项目（1）</title>
     <link href="http://yoursite.com/2020/05/05/golang%E4%BD%BF%E7%94%A8gin%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E5%B7%A5%E4%BD%9C%E9%A1%B9%E7%9B%AE/"/>
     <id>http://yoursite.com/2020/05/05/golang%E4%BD%BF%E7%94%A8gin%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E5%B7%A5%E4%BD%9C%E9%A1%B9%E7%9B%AE/</id>
     <published>2020-05-05T15:59:41.000Z</published>
-    <updated>2020-05-05T16:00:08.373Z</updated>
+    <updated>2020-05-05T16:40:12.819Z</updated>
     
     <summary type="html">
     
