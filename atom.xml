@@ -6,7 +6,7 @@
   <link href="/lpf.github.io/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-06T15:04:15.568Z</updated>
+  <updated>2020-05-17T03:23:42.019Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gin搭建项目框架-日志处理</title>
+    <link href="http://yoursite.com/2020/05/17/gin%E6%90%AD%E5%BB%BA%E9%A1%B9%E7%9B%AE%E6%A1%86%E6%9E%B6-%E6%97%A5%E5%BF%97%E5%A4%84%E7%90%86/"/>
+    <id>http://yoursite.com/2020/05/17/gin%E6%90%AD%E5%BB%BA%E9%A1%B9%E7%9B%AE%E6%A1%86%E6%9E%B6-%E6%97%A5%E5%BF%97%E5%A4%84%E7%90%86/</id>
+    <published>2020-05-17T03:22:20.000Z</published>
+    <updated>2020-05-17T03:23:42.019Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;日志对于项目来说也是很重要的一部分，毕竟我们的程序是不可能没有bug的。如果日志打印在项目中，会比较零散，不方便管理，也不方便收集。这里记录下我的一些做法。&lt;/p&gt;
+&lt;h2 id=&quot;一、打印日志&quot;&gt;&lt;a href=&quot;#一、打印日志&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="gin" scheme="http://yoursite.com/tags/gin/"/>
+    
+      <category term="shell" scheme="http://yoursite.com/tags/shell/"/>
+    
+  </entry>
   
   <entry>
     <title>golang搭建项目框架(3)</title>
