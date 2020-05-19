@@ -6,7 +6,7 @@
   <link href="/lpf.github.io/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-17T03:23:42.019Z</updated>
+  <updated>2020-05-19T12:52:57.917Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>goaccess实时查看日志</title>
+    <link href="http://yoursite.com/2020/05/19/goaccess%E5%AE%9E%E6%97%B6%E6%9F%A5%E7%9C%8B%E6%97%A5%E5%BF%97/"/>
+    <id>http://yoursite.com/2020/05/19/goaccess%E5%AE%9E%E6%97%B6%E6%9F%A5%E7%9C%8B%E6%97%A5%E5%BF%97/</id>
+    <published>2020-05-19T12:51:01.000Z</published>
+    <updated>2020-05-19T12:52:57.917Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;goaccess 是一款强大的web日志分析工具，可以定义不同类型的日志格式,支持生成html页面，json等格式文档&lt;/p&gt;
+&lt;h2 id=&quot;一、安装&quot;&gt;&lt;a href=&quot;#一、安装&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="nginx" scheme="http://yoursite.com/tags/nginx/"/>
+    
+      <category term="goaccess" scheme="http://yoursite.com/tags/goaccess/"/>
+    
+  </entry>
   
   <entry>
     <title>gin搭建项目框架-日志处理</title>
